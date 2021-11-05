@@ -1,3 +1,4 @@
 node_modules/
-lib/index.js.map
+/lib/*
+!/lib/index.js
 yarn-error.log

@@ -1,0 +1,26 @@
+{
+  "name": "pluto-escape",
+  "version": "1.0.0",
+  "description": "i18n helper",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc --watch"
+  },
+  "bin": {
+    "pluto-escape": "./bin/pluto-escape.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "typescript": "^4.4.4",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "md5": "^2.3.0",
+    "pinyin": "^2.10.2",
+    "shelljs": "^0.8.4"
+  }
+}

@@ -1,5 +1,5 @@
 import minimist from 'minimist';
-import babel from '@babel/core';
+import { transformFileSync } from '@babel/core';
 import fs from 'fs';
 import shell from 'shelljs';
 import {
@@ -32,12 +32,12 @@ if (write.length === 0) {
 const targetFiles = getTargetFile(targetDir, ignore);
 targetFiles.forEach((file, index) => {
   console.log(
-    `正在处理文件 (${index + 1}/${targetFiles.length}, ${((index + 1 / targetFiles.length) * 100).toFixed(
+    `正在处理文件 (${index + 1}/${targetFiles.length}, ${(((index + 1) / targetFiles.length) * 100).toFixed(
       2
     )}%): ${file}`
   );
   // TODO: 项目中目标文件夹在第二层级 project/xxx/target 以后优化做通用配置
-  const [, , ...paths] = file.split('/');
+  const [, , ...paths] = file.split('.')[0]?.split('/');
   let line = '';
   let addNothing = true;
   const lineMap: { [key: string]: boolean } = {};
@@ -49,7 +49,7 @@ targetFiles.forEach((file, index) => {
       existPathMap[existPathKey] = true;
     }
   }
-  babel.transformFileSync(file, {
+  transformFileSync(file, {
     ast: false,
     code: false,
     plugins: [
@@ -178,3 +178,4 @@ targetFiles.forEach((file, index) => {
   console.log('写入 yml 文件:\n', line);
   write.forEach((wFile) => fs.writeFileSync(wFile, line, { flag: 'a' }));
 });
+console.log("处理完成");

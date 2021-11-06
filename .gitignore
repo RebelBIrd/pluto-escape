@@ -1,4 +1,3 @@
 node_modules/
-/lib/*
-!/lib/index.js
+lib/
 yarn-error.log

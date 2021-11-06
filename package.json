@@ -1,6 +1,6 @@
 {
   "name": "pluto-escape",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "i18n helper",
   "main": "index.js",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "i18n",
     "pluto-escape"
   ],
-  "author": "zhoujiwei",
+  "author": "chemwenxin@gmail.com",
   "bugs": {
     "url": "https://github.com/RebelBIrd/pluto-escape/issues"
   },

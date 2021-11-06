@@ -1,5 +1,5 @@
 node_modules/
 yarn-error.log
 lib/
-pacakge-lock.json
+package-lock.json
 yarn.lock

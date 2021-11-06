@@ -12,6 +12,19 @@
   "bin": {
     "pluto-escape": "./bin/pluto-escape.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com:RebelBIrd/pluto-escape.git"
+  },
+  "keywords": [
+    "i18n",
+    "pluto-escape"
+  ],
+  "author": "zhoujiwei",
+  "bugs": {
+    "url": "https://github.com/RebelBIrd/pluto-escape/issues"
+  },
+  "homepage": "https://github.com/RebelBIrd/pluto-escape#readme",
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
     "@babel/preset-typescript": "^7.15.0",

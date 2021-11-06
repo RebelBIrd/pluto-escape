@@ -1,6 +1,6 @@
 {
   "name": "pluto-escape",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "i18n helper",
   "main": "index.js",
   "license": "MIT",

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import minimist from 'minimist';
 import { transformFileSync } from '@babel/core';
 import fs from 'fs';

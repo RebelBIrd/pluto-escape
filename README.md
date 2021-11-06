@@ -7,12 +7,12 @@ js 端 i18n 自动转化工具
 ```diff
 const Demo = () => {
 -  const panda = "熊猫"
-+	 const panda = t("js.path.file.xiong_mao")
++  const panda = t("js.path.file.xiong_mao")
   return (
--  	<Banner name={panda} title="老鼠" action={`今天中午吃${snack}和${animals.frog}`}>
+-   <Banner name={panda} title="老鼠" action={`今天中午吃${snack}和${animals.frog}`}>
 +   <Banner name={panda} title={t("js.path.file.lao_shu")} action={t("js.path.file.jin_tian_zhong_wu_chi_he", { value1: snack, value2: animals.frog })}>
--    	老虎、{panda}
-+    	{t("js.path.file.lao_hu")}{panda}
+-     老虎、{panda}
++     {t("js.path.file.lao_hu")}{panda}
     </Banner>
   )
 }
@@ -23,12 +23,12 @@ const Demo = () => {
 ```diff
 zh-CN:
   js:
-+  	path:
-+  		file:
-+  			xiong_nmao: 熊猫
-+  			lao_shu: 老鼠
-+  			jin_tian_zhong_wu_chi_he: 今天中午吃{{value1}}和{{value2}}
-+  			lao_hu: '老虎、'
++   path:
++     file:
++       xiong_nmao: 熊猫
++       lao_shu: 老鼠
++       jin_tian_zhong_wu_chi_he: 今天中午吃{{value1}}和{{value2}}
++       lao_hu: '老虎、'
 ```
 
 ### 安装

@@ -36,7 +36,7 @@ zh-CN:
 使用 `yarn`
 
 ```shell
-yarn global add pluto-escape
+npm install pluto-escape -g
 ```
 
 ### 用法

@@ -25,15 +25,13 @@ zh-CN:
   js:
 +   path:
 +     file:
-+       xiong_nmao: 熊猫
++       xiong_mao: 熊猫
 +       lao_shu: 老鼠
 +       jin_tian_zhong_wu_chi_he: 今天中午吃{{value1}}和{{value2}}
 +       lao_hu: '老虎、'
 ```
 
 ### 安装
-
-使用 `yarn`
 
 ```shell
 npm install pluto-escape -g

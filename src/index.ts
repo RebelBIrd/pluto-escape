@@ -46,7 +46,7 @@ targetFiles.forEach((file, index) => {
     const existPathKey = paths.slice(0, i + 1).join('.');
     const addLine = Array((i + 2) * 2).join(' ') + ' ' + paths[i] + ':' + '\n';
     if (!existPathMap[existPathKey]) {
-      line += addLine.toLowerCase();
+      line += addLine
       existPathMap[existPathKey] = true;
     }
   }

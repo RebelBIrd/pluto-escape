@@ -49,6 +49,7 @@ pluto-escape "src/javascript/**/*.[jt]s{,x}" --write zh-CN.yml,en.yml --ignore "
 - [ ] 多行文本处理可能出现问题
 - [ ] 带有特殊字符的串可能出现问题
 - [ ] 可配置更多参数。比如，`i18n.t` 函数名、路径前缀、缩进格式等
+- [ ] 添加单元测试
 - [ ] 优化提示语和命令行界面
 - [ ] 添加命令行 helper
 
